@@ -1,7 +1,4 @@
 body {
-    /* Set line height to 1.5 times the font size
-         and use the OS’s UI font as the website font
-       */
     font: 100%/1.5 system-ui;
     max-width: 50em;
     margin: auto;
@@ -39,7 +36,6 @@ nav a.current {
   padding-bottom: 0.1em;
 }
   
-  /* Hover effect */
 nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
   padding-bottom: 0.1em;
@@ -74,7 +70,6 @@ form button {
   margin-top: 1em;
 }
 
-/* Optional styling for each article */
 .projects article {
   display: grid;
   grid-template-rows: subgrid;
