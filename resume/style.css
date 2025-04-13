@@ -1,0 +1,60 @@
+body {
+    font: 100%/1.5 system-ui;
+    max-width: 50em;
+    margin: auto;
+    margin-inline: max(1em, (100% - 100ch) / 2);
+  }
+  
+  h1, h2, h3 {
+    line-height: 1.1;
+    text-wrap: balance;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  h1 {
+    font-size: 400%;
+  }
+  
+  h2 {
+    font-size: 150%;
+    border-bottom: 2px solid oklch(85% 5% 200 / 50%);
+    padding-bottom: 0.25em;
+  }
+  
+  h3 {
+    font-size: 115%;
+    margin-bottom: 0.25em;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0.75em;
+  }
+  
+  p a {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
+
+  ul {
+    padding-left: 1.2em;
+    margin-bottom: 1.5em;
+  }
+  
+  ul li {
+    margin-bottom: 0.4em;
+  }
+  
+  h3 a {
+    color: var(--color-accent);
+  }
+  
+  h3 a:hover {
+    text-decoration: underline;
+  }

@@ -3,4 +3,112 @@ body {
          and use the OS’s UI font as the website font
        */
     font: 100%/1.5 system-ui;
+    max-width: 50em;
+    margin: auto;
+    margin-inline: max(1em, (100% - 100ch) / 2);
+    /* padding: 10px; */
   }
+
+
+nav {
+  display: flex;
+  border-bottom: 1px solid oklch(80% 3% 200);
+  margin-bottom: 1em;
+}
+
+nav a {
+    flex: 1;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+nav a.current {
+  border-bottom: 0.4em solid oklch(90% 3% 200);
+  padding-bottom: 0.1em; /* Reduce padding to offset border thickness */
+}
+
+html {
+  --color-accent: oklch(75% 0.15 250);
+  accent-color: var(--color-accent);
+}
+
+nav a.current {
+  border-bottom: 0.4em solid oklch(90% 3% 200);
+  padding-bottom: 0.1em;
+}
+  
+  /* Hover effect */
+nav a:hover {
+  border-bottom: 0.4em solid var(--color-accent);
+  padding-bottom: 0.1em;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+
+form label {
+  display: contents; 
+}
+
+input, textarea, button {
+  font: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+form button {
+  grid-column: 1 / -1;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+/* Optional styling for each article */
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  padding: 1em;
+  border: 1px solid oklch(85% 5% 200 / 50%);
+  border-radius: 0.5em;
+  background-color: oklch(98% 2% 250 / 20%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.projects h2 {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.projects img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-block: 0.5em;
+}
+
+.projects p {
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 400%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
